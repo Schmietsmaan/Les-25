@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Huiswerkopdracht les 25</title>        
+        <link type="text/css" rel="stylesheet" href="stylesheet.css">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="hidden" id="header_opmaak">
+                Hallo wereld!
+            </h1>
+        </header>
+
+        <main>
+            <h3>
+                Klik op de onderstaande knoppen om enkele elementen te veranderen
+            </h3>
+            <input id="header" name="knop_header" type="button" value="Verander de header">
+            <input id="footer" name="knop_footer" type="button" value="Verander de footer">
+        </main>
+
+        <footer>
+            <h1 class="hidden" id="footer_opmaak">
+                Vaarwel wereld!
+            </h1>
+        </footer>
+
+        <script>        
+        //JQuery om de opmaak van de header en footer te veranderen
+            $("#header").click(function(){
+                if ($("#header_opmaak").css("visibility") == "hidden") {
+                    $("#header_opmaak").css("visibility", "visible");
+                    $("header").css("background-color", "red");
+                }
+                else{
+                    $("#header_opmaak").css("visibility", "hidden")
+                    $("header").css("background-color", "#444");
+                }
+            })
+            $("#footer").click(function(){
+                if ($("#footer_opmaak").css("visibility") == "hidden") {
+                    $("#footer_opmaak").css("visibility", "visible");
+                    $("footer").css("background-color", "blue");
+                }
+                else{
+                    $("#footer_opmaak").css("visibility", "hidden")
+                    $("footer").css("background-color", "#444");
+                }
+            })       
+            //EINDE JQUERY
+        </script>
+    </body>
+</html>

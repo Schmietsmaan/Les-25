@@ -1,0 +1,17 @@
+body{
+    background-color: #333;
+    color: white;
+}
+header,footer{
+    height: 150px;
+    background-color: #444;
+    text-align: center;
+    line-height: 6rem;
+}
+main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hidden{
+    visibility: hidden;
+}
